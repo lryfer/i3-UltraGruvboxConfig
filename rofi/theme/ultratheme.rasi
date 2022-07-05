@@ -1,0 +1,89 @@
+
+/*         ___    __                                   ___           */
+/*        /\_ \  /\ \__                              /'___\ __       */
+/*  __  __\//\ \ \ \ ,_\  _ __    __     _ __   ___ /\ \__//\_\      */
+/* /\ \/\ \ \ \ \ \ \ \/ /\`'__\/'__`\  /\`'__\/ __`\ \ ,__\/\ \     */
+/* \ \ \_\ \ \_\ \_\ \ \_\ \ \//\ \L\.\_\ \ \//\ \L\ \ \ \_/\ \ \    */
+/*  \ \____/ /\____\\ \__\\ \_\\ \__/.\_\\ \_\\ \____/\ \_\  \ \_\   */
+/*   \/___/  \/____/ \/__/ \/_/ \/__/\/_/ \/_/ \/___/  \/_/   \/_/   */
+
+*{
+    background-color:            #282828;
+    selected-normal-background:  #fabd2f;
+    text-color:                  #ebdbb2;
+    font: "JetBrainsMono Nerd Font 12";
+}
+
+window
+{
+    transparency:            "real";
+    location:                  center;
+    x-offset:                0%;
+    y-offset:                0%;
+    height:                            620px;
+    height:                            620px;
+    width:                             620px;
+    orientation:             horizontal;
+    padding:                 10px;
+    border:                  0px;
+    width:                   35%;
+    border:1;
+    border-color:            #fe8019;
+}
+inputbar
+{
+    border:                   1 0 1px 0;
+    children:                 [prompt,entry];
+}
+prompt
+{
+    padding:                  8px 16px 16px 16px ;
+    border:                   0 1px 0 0;
+    text-color:               #F7B45E;
+    font:                     "JetBrainsMono Nerd Font 20";
+}
+entry
+{
+    padding:                  16px;
+    text-color:               #fabd2f;
+     font:                    "JetBrainsMono Nerd Font  13";
+}
+listview
+{
+    cycle:                    false;
+    margin:                   0 0 1px 0;
+    scrollbar:                false;
+    border-color:             #b8bb26;
+}
+element
+{
+    border:                   0;
+    padding:                  8px;
+}
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+}
+element-icon
+{
+    background-color:         inherit;
+    size:                     23px ;
+    margin:                   0 0 1px 0;
+}
+
+element selected
+{
+    background-color:         #fe8019;
+    text-color:               #282828;
+    border:                   0% 0% 0% 0%;
+    border-radius:            15px;
+    border-color:             #fe8019;
+}
+element.selected.normal {
+    background-color: #689d6a;
+    text-color:       #282828;
+}
+button.selected {
+    background-color: #ebdbb2;
+    text-color:       #ebdbb2;
+}
