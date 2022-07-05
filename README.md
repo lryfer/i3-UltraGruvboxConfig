@@ -1,5 +1,5 @@
 that is the i3 rice I made, feel free to use them or do whatever you want with it (ɔ◔‿◔)ɔ♥ 
-this is similar to one i did for myself but with a used color sheme
+
 
 ## What you will need in order to make it work:
 
