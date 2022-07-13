@@ -14,7 +14,7 @@ set $mod Mod4
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id sh ~/.config/polybar/launch.sh
 exec --no-startup-id setxkbmap it
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock-fancy --nofork
 exec --no-startup-id nm-applet
 for_window [class="^.*"] border pixel 2
 gaps inner 10
@@ -23,7 +23,7 @@ gaps outer 10
 # in case you got i3gaps rounded
 border_radius 5
 
-bindsym $mod+z		gaps outer current plus 5
+bindsym $mod+z		gaps outer current plus  5 
 bindsym $mod+Shift+z	gaps outer current minus 5
 
 # sets the wallpaper
@@ -66,10 +66,10 @@ bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
 # split in horizontal orientation
-bindsym $mod+s+h split h
+bindsym $mod+Ctrl+h split h
 
 # split in vertical orientation
-bindsym $mod+s+v split v
+bindsym $mod+Ctrl+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
