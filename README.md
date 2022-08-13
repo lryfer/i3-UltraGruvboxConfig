@@ -1,4 +1,4 @@
-that is the i3 rice I made, feel free to use it or do whatever you want with the code (ɔ◔‿◔)ɔ♥ 
+that is the i3 rice I made, feel free to use it or do whatever you want  (ɔ◔‿◔)ɔ♥ 
 
 
 ## What you will need in order to make it work:
