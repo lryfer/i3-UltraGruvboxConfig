@@ -5,7 +5,7 @@ that is the i3 rice I made, feel free to use it or do whatever you want  (ɔ◔�
 
 | ---------------------------------------- | ---------------------------------------- |
 | ---------------------------------------- | ---------------------------------------- |
-| Wm                                       | I3-gaps-rounded                          |
+| Wm                                       | I3-gaps                                  |
 | Fonts                                    | JetBrainsMono Nerd Font                  |
 | Terminal                                 | Alacritty                                |
 | Laucher                                  | Rofi                                     |
