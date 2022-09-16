@@ -12,7 +12,8 @@ that is the i3 rice I made, feel free to use it or do whatever you want  (ɔ◔�
 | bar                                      | polybar                                  |
 | Image viewer                             | feh                                      |
 | GTK theme                                | jmattheis/gruvbox-dark-gtk               |
-|  Lock                                     |  i3lock-fancy                           |
+| Lock                                     | i3lock-fancy                             |
+| Compositor                               | picom                                    |
 
 ![gde1](https://user-images.githubusercontent.com/96692294/177333622-22fc8d0f-dce7-4e94-b8ce-489d16240cd5.png)
 ![gde2](https://user-images.githubusercontent.com/96692294/177333628-95b34028-1776-4054-ab18-1fa6761c0203.png)
