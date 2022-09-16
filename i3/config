@@ -13,30 +13,23 @@
 set $mod Mod4
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id sh ~/.config/polybar/launch.sh
-exec --no-startup-id setxkbmap it
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock-fancy --nofork
 exec --no-startup-id nm-applet
 for_window [class="^.*"] border pixel 2
 gaps inner 10
 gaps outer 10
 
-# in case you got i3gaps rounded
-border_radius 5
-
 bindsym $mod+z		gaps outer current plus  5 
 bindsym $mod+Shift+z	gaps outer current minus 5
 
 # sets the wallpaper
-exec --no-startup-id feh --bg-fill ~/.config/i3/wallpapers/gruvbox1.png
-
+exec --no-startup-id feh --bg-fill ~/.config/i3/wallpapers/gruv-material.png
+# starts the compositor
+exec --no-startup-id picom --config ~/.config/picom/picom.conf 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
-# remove the titlebar
+# removes the titlebar
 for_window [class="^.*"] border pixel 0
 for_window [class="krunner"] border pixel 0
 for_window [class="krunner"] floating enable
@@ -88,7 +81,7 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 
-#font in use by i3
+# font in use by i3
 font pango:JetbrainsMono Nerd Font 11
 
 # Define names for default workspaces for which we configure key bindings later on.
@@ -133,7 +126,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'HEY i saw that you pressed the exit combination, do you want to quit i3 (◕‿◕ ✿) ?' -B 'YEAH FUCK THIS SHIT' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'do you want to quit i3 (◕‿◕ ✿) ?' -B 'YEAH FUCK THIS SHIT' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -148,12 +141,12 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 # class                 border  backgr. text    indicator child_border
-client.focused          #2C2C2C #2C2C2C #ffffff #2e9ef4   #285577
-client.focused_inactive #2C2C2C #2C2C2C #ffffff #484e50   #5f676a
-client.unfocused        #333333 #222222 #888888 #292d2e   #222222
-client.urgent           #F7B45E #2C2C2C #ffffff #900000   #900000
-client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+client.focused          #282828 #282828 #83a598  #83a598   #458588
+client.focused_inactive #282828 #282828 #ebdbb2  #d3869b   #5f676a
+client.unfocused        #1d2021 #282828 #ebdbb2  #282828   #1d2021
+client.urgent           #cc241c #928364 #ebdbb2  #cc241c   #cc241c
+client.placeholder      #8ec07c #0c0c0c #ebdbb2  #ebdbb2   #1d2021  
 
-client.background       #ffffff
+client.background      #fbf1c7 
 
 bindsym $mod+r mode "resize"
