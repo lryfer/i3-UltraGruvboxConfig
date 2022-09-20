@@ -12,11 +12,6 @@ if [[ $(ls ~/.config/ | grep "alacritty") ]]; then
 fi
 cp -r src/alacritty/ ~/.config/
 
-if [[ $(ls ~/.config/ | grep "alacritty") ]]; then
-  mv ~/.config/alacritty/ ~/.config/OldConfig
-fi
-cp -r src/alacritty/ ~/.config/ 
-
 if [[ $(ls ~/.config/ | grep "i3") ]]; then
   mv ~/.config/i3/ ~/.config/OldConfig
 fi
