@@ -2,8 +2,7 @@ sudo echo ""
 echo "========================================================================="
 echo "setting the folders in the directory .config"
 if [[ $(ls ~/.config/ | grep "OldConfig") ]]; then
-  echo -e "it seems the scripts already run on the system, you might \n
-  need to remove the folder ~/.config/OldConfig folder to execute the script"
+  echo -e "it seems the scripts already run on the system, you might \nneed to remove the folder ~/.config/OldConfig folder to execute the script"
   exit 
 fi
 mkdir ~/.config/OldConfig
