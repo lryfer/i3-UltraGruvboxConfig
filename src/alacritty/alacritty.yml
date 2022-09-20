@@ -1,0 +1,59 @@
+
+#          ___    __                   __
+#         /\_ \  /\ \__               /\ \__
+#   __  __\//\ \ \ \ ,_\  _ __    __  \ \ ,_\    __   _ __    ___ ___
+#  /\ \/\ \ \ \ \ \ \ \/ /\`'__\/'__`\ \ \ \/  /'__`\/\`'__\/' __` __`\
+#  \ \ \_\ \ \_\ \_\ \ \_\ \ \//\ \L\.\_\ \ \_/\  __/\ \ \/ /\ \/\ \/\ \
+#   \ \____/ /\____\\ \__\\ \_\\ \__/.\_\\ \__\ \____\\ \_\ \ \_\ \_\ \_\
+#    \/___/  \/____/ \/__/ \/_/ \/__/\/_/ \/__/\/____/ \/_/  \/_/\/_/\/_/
+
+font:
+  normal:
+    family: JetBrainsMono Nerd Font
+    style: Regular
+
+  bold:
+    family: JetBrainsMono Nerd Font
+    style: Bold
+
+  italic:
+    family: JetBrainsMono Nerd Font
+    style: Italic
+
+  bold_italic:
+    family: JetBrainsMono Nerd Font
+    style: Bold Italic
+  size: 9.0
+
+colors:
+  cursor:
+    text: "#fbf1c7"
+    cursor: "#fabd2f"
+
+  selection:
+    text: "#282828"
+    background: "#928374"
+
+  primary:
+    background: "#282828"
+    foreground: "#ebdbb2"
+
+  normal:
+    black: "#282828"
+    red: "#cc241c"
+    green: "#98971a"
+    yellow: "#d79921"
+    blue: "#458588"
+    magenta: "#b16286"
+    cyan: "#689d6a"
+    white: "#ebdbb2"
+
+  bright:
+    black: "#1d2021"
+    red: "#fb4934"
+    green: "#b8bb26"
+    yellow: "#fabd2f"
+    blue: "#83a598"
+    magenta: "#d3869b"
+    cyan: "#8ec07c"
+    white: "#fbf1c7"
