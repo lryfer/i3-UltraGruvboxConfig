@@ -17,6 +17,7 @@ that is the i3 rice I made, feel free to use it or do whatever you want  (ɔ◔�
 | Shell                                    | Fish                                     |
 | Omf theme                                | BobTheFish                               |\
 
-![gde1](https://user-images.githubusercontent.com/96692294/177333622-22fc8d0f-dce7-4e94-b8ce-489d16240cd5.png)
-![gde2](https://user-images.githubusercontent.com/96692294/177333628-95b34028-1776-4054-ab18-1fa6761c0203.png)
-![bg3](https://user-images.githubusercontent.com/96692294/177338324-e9b6aeb4-414d-47e7-8399-cfb1d54387f8.png)
+
+![config-material](https://user-images.githubusercontent.com/96692294/191228900-2c4450e5-d3a8-4619-ab67-e7bfd77cc053.png)
+![gruv-cup](https://user-images.githubusercontent.com/96692294/191228907-6a10be08-aa37-4eef-a1ff-26554f3adbc4.png)
+![houses](https://user-images.githubusercontent.com/96692294/191228914-22eeff9d-5670-434b-9c1a-269a83793a94.png)
