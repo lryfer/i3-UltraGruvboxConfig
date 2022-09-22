@@ -42,10 +42,7 @@ mv *.ttf JBNF && rm -r JetBrainsMono.zip
 sudo mv JBNF /usr/share/fonts/ 
 echo "JetBrainsMono Nerd Fonts installed in the directory /usr/share/fonts/JBNF"
 echo "========================================================================="
-echo "installing oh my fish framework for themes"
-curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install 
-omf install bobthefish
-echo "========================================================================="
 echo "                                 done                                    "
 echo "========================================================================="
+echo " - now you need to install omf with bobthefish theme and you're done  :)"
 
