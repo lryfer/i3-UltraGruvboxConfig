@@ -22,6 +22,11 @@ if [[ $(ls ~/.config/ | grep "picom") ]]; then
 fi
 cp -r src/picom/ ~/.config/
 
+if [[ $(ls ~/.config/ | grep "rofi") ]]; then
+  mv ~/.config/rofi/ ~/.config/OldConfig
+fi
+cp -r src/rofi/ ~/.config/
+
 if [[ $(ls ~/.config/ | grep "fish") ]]; then
   mv ~/.config/fish/ ~/.config/OldConfig
 fi
