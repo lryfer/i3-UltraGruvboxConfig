@@ -37,8 +37,11 @@ if [[ $(ls ~/.config/ | grep "polybar") ]]; then
 fi
 cp -r src/polybar/ ~/.config/
 sudo chmod 777 ~/.config/polybar/scripts/*
-echo "========================================================================="
 
+echo "========================================================================="
+echo "getting the gtk Theme"
+sudo git clone https://github.com/jmattheis/gruvbox-dark-gtk ~/usr/share/themes/gruvbox-theme 
+echo "========================================================================="
 echo "getting nerd JetBrainsMono Nerd Fonts"
 curl -LO https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/JetBrainsMono.zip
 unzip JetBrainsMono.zip
