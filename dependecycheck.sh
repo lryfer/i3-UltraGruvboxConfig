@@ -37,6 +37,10 @@ fi
 if [[ -z $(command -v pavucontrol) ]]; then
   misdep+=" pavucontrol"
 fi
+if [[ -z $(command -v xdotool) ]]; then
+  misdep+=" xdotool"
+fi
+
 if [[ $misdep != "" ]]; then
   echo ${misdep:1}" is/are missing in the system"
   if [[ $(command -v pacman) ]]; then
