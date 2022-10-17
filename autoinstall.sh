@@ -7,35 +7,35 @@ if [[ $(ls ~/.config/ | grep "OldConfig") ]]; then
 fi
 mkdir ~/.config/OldConfig
 if [[ $(ls ~/.config/ | grep "alacritty") ]]; then
-  mv ~/.config/alacritty/ ~/.config/OldConfig
+  mv -f ~/.config/alacritty ~/.config/OldConfig
 
 fi
-cp -r src/alacritty/ ~/.config/
+cp -r src/alacritty ~/.config/
 
 if [[ $(ls ~/.config/ | grep "i3") ]]; then
-  mv ~/.config/i3/ ~/.config/OldConfig
+  mv ~/.config/i3 ~/.config/OldConfig
 fi
 cp -r src/i3/ ~/.config/
 
 if [[ $(ls ~/.config/ | grep "picom") ]]; then
-  mv ~/.config/picom/ ~/.config/OldConfig
+  mv ~/.config/picom ~/.config/OldConfig
 fi
-cp -r src/picom/ ~/.config/
+cp -r src/picom ~/.config/
 
 if [[ $(ls ~/.config/ | grep "rofi") ]]; then
-  mv ~/.config/rofi/ ~/.config/OldConfig
+  mv ~/.config/rofi ~/.config/OldConfig
 fi
-cp -r src/rofi/ ~/.config/
+cp -r src/rofi ~/.config/
 
 if [[ $(ls ~/.config/ | grep "fish") ]]; then
-  mv ~/.config/fish/ ~/.config/OldConfig
+  mv ~/.config/fish ~/.config/OldConfig
 fi
-cp -r src/fish/ ~/.config/
+cp -r src/fish ~/.config/
 
 if [[ $(ls ~/.config/ | grep "polybar") ]]; then
-  mv ~/.config/polybar/ ~/.config/OldConfig
+  mv ~/.config/polybar ~/.config/OldConfig
 fi
-cp -r src/polybar/ ~/.config/
+cp -rf src/polybar ~/.config/
 sudo chmod 777 ~/.config/polybar/scripts/*
 
 echo "========================================================================="
@@ -47,7 +47,8 @@ curl -LO https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/JetBra
 unzip JetBrainsMono.zip
 mkdir -p JBNF
 mv *.ttf JBNF && rm -r JetBrainsMono.zip
-sudo mv JBNF /usr/share/fonts/ 
+rm -rf /usr/share/fonts/JBNF
+sudo mv -f JBNF /usr/share/fonts/
 echo "JetBrainsMono Nerd Fonts installed in the directory /usr/share/fonts/JBNF"
 echo "========================================================================="
 echo "                                 done                                    "
