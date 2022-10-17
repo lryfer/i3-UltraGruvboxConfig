@@ -44,7 +44,10 @@ sudo chown -R ${USER}:${USER} ~/.config/polybar/scripts/
 
 echo "========================================================================="
 echo "getting the gtk Theme"
-sudo git clone https://github.com/jmattheis/gruvbox-dark-gtk ~/usr/share/themes/gruvbox-theme 
+sudo git clone https://github.com/jmattheis/gruvbox-dark-gtk ~/usr/share/themes/gruvbox-theme
+echo "gtk-theme-name=\"gruvbox-theme\"
+gtk-font-name=\"Sans Regular\"
+gtk-icon-theme-name=\"Papirus-Dark\"" > ~/.config/gtkrc
 echo "========================================================================="
 echo "getting nerd JetBrainsMono Nerd Fonts"
 curl -LO https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/JetBrainsMono.zip
