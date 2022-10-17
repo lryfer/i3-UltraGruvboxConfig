@@ -49,12 +49,12 @@ echo "getting the gtk Theme"
 sudo git clone https://github.com/jmattheis/gruvbox-dark-gtk ~/usr/share/themes/gruvbox-theme
 GTK_THEME="gtk-theme-name=\"gruvbox-theme\"\ngtk-font-name=\"Sans Regular\"\ngtk-icon-theme-name=\"Papirus-Dark\"\n"
 echo -e ${GTK_THEME}> ~/.config/gtkrc
-sed -i "s/gtk-theme-name=/gtk-theme-name=gruvbox-theme #/g" ~/.config/gtk-3.0/settings.ini
-sed -i "s/gtk-font-name=/gtk-font-name=Sans Regular #/g" ~/.config/gtk-3.0/settings.ini
-sed -i "s/gtk-icon-theme-name=/gtk-icon-theme-name=Papirus-Dark #/g" ~/.config/gtk-3.0/settings.ini
-sed -i "s/gtk-theme-name=/gtk-theme-name=gruvbox-theme #/g" ~/.config/gtk-4.0/settings.ini
-sed -i "s/gtk-font-name=/gtk-font-name=Sans Regular #/g" ~/.config/gtk-4.0/settings.ini
-sed -i "s/gtk-icon-theme-name=/gtk-icon-theme-name=Papirus-Dark #/g" ~/.config/gtk-4.0/settings.ini
+sed -i "s/gtk-theme-name=.*/gtk-theme-name=gruvbox-theme/g" ~/.config/gtk-3.0/settings.ini
+sed -i "s/gtk-font-name=.*/gtk-font-name=Sans Regular/g" ~/.config/gtk-3.0/settings.ini
+sed -i "s/gtk-icon-theme-name=.*/gtk-icon-theme-name=Papirus-Dark/g" ~/.config/gtk-3.0/settings.ini
+sed -i "s/gtk-theme-name=.*/gtk-theme-name=gruvbox-theme/g" ~/.config/gtk-4.0/settings.ini
+sed -i "s/gtk-font-name=.*/gtk-font-name=Sans Regular/g" ~/.config/gtk-4.0/settings.ini
+sed -i "s/gtk-icon-theme-name=.*/gtk-icon-theme-name=Papirus-Dark/g" ~/.config/gtk-4.0/settings.ini
 echo "========================================================================="
 echo "getting nerd JetBrainsMono Nerd Fonts"
 curl -LO https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/JetBrainsMono.zip
