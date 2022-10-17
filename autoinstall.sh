@@ -38,6 +38,8 @@ cp -r src/fish ~/.config/
 
 if [[ $(ls ~/.config/ | grep "polybar") ]]; then
   mv -f ~/.config/polybar ~/.config/OldConfig
+  sed -i "s/BAT1/$(ls /sys/class/power_supply/ | grep BAT)/g"  ~/.config/polybar/modules.ini
+  sed -i "s/AC/$(ls /sys/class/power_supply/ | grep AC)/g"  ~/.config/polybar/modules.ini
 fi
 cp -rf src/polybar ~/.config/
 sudo chown -R ${USER}:${USER} ~/.config/polybar/scripts/
