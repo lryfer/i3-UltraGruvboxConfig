@@ -29,6 +29,8 @@ if [[ $(ls ~/.config/ | grep "rofi") ]]; then
 fi
 cp -r src/rofi ~/.config/
 
+curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+fish -c "omf install bobthefish"
 if [[ $(ls ~/.config/ | grep "fish") ]]; then
   mv -f ~/.config/fish ~/.config/OldConfig
 fi
