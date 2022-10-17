@@ -13,27 +13,27 @@ fi
 cp -r src/alacritty ~/.config/
 
 if [[ $(ls ~/.config/ | grep "i3") ]]; then
-  mv ~/.config/i3 ~/.config/OldConfig
+  mv -f ~/.config/i3 ~/.config/OldConfig
 fi
 cp -r src/i3/ ~/.config/
 
 if [[ $(ls ~/.config/ | grep "picom") ]]; then
-  mv ~/.config/picom ~/.config/OldConfig
+  mv -f ~/.config/picom ~/.config/OldConfig
 fi
 cp -r src/picom ~/.config/
 
 if [[ $(ls ~/.config/ | grep "rofi") ]]; then
-  mv ~/.config/rofi ~/.config/OldConfig
+  mv -f ~/.config/rofi ~/.config/OldConfig
 fi
 cp -r src/rofi ~/.config/
 
 if [[ $(ls ~/.config/ | grep "fish") ]]; then
-  mv ~/.config/fish ~/.config/OldConfig
+  mv -f ~/.config/fish ~/.config/OldConfig
 fi
 cp -r src/fish ~/.config/
 
 if [[ $(ls ~/.config/ | grep "polybar") ]]; then
-  mv ~/.config/polybar ~/.config/OldConfig
+  mv -f ~/.config/polybar ~/.config/OldConfig
 fi
 cp -rf src/polybar ~/.config/
 sudo chown -R ${USER}:${USER} ~/.config/polybar/scripts/
