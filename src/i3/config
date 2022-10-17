@@ -126,7 +126,17 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'do you want to quit i3 (◕‿◕ ✿) ?' -B 'YEAH FUCK THIS SHIT' 'i3-msg exit'"
+mode "(S)uspend, (L)ogout, (R)eboot, (P)oweroff" {
+        bindsym r exec --no-startup-id systemctl reboot
+        bindsym s exec --no-startup-id systemctl suspend; mode "default"
+        bindsym l exit
+        bindsym p exec --no-startup-id systemctl poweroff
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default" exec killall i3-nagbar
+        bindsym Escape mode "default" exec killall i3-nagbar
+}
+bindsym $mod+Shift+e mode "(S)uspend, (L)ogout, (R)eboot, (P)oweroff" exec "i3-nagbar -t warning -m '(S)uspend, (L)ogout, (R)eboot, (P)oweroff' -B 'Cancel' 'xdotool key Escape' -B '(S)uspend' 'xdotool key S'  -B '(L)ogout' 'xdotool key l' -B '(R)eboot' 'xdotool key r' -B '(P)oweroff' 'xdotool key p'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
