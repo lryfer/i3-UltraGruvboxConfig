@@ -36,7 +36,7 @@ if [[ $(ls ~/.config/ | grep "polybar") ]]; then
   mv ~/.config/polybar ~/.config/OldConfig
 fi
 cp -rf src/polybar ~/.config/
-sudo chmod 777 ~/.config/polybar/scripts/*
+sudo chown -R ${USER}:${USER} ~/.config/polybar/scripts/
 
 echo "========================================================================="
 echo "getting the gtk Theme"
