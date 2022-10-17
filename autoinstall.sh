@@ -43,7 +43,7 @@ if [[ $(ls ~/.config/ | grep "polybar") ]]; then
 fi
 cp -rf src/polybar ~/.config/
 sudo chown -R ${USER}:${USER} ~/.config/polybar/scripts/
-
+sudo chmod -R 750 ~/.config/polybar/scripts/
 echo "========================================================================="
 echo "getting the gtk Theme"
 sudo git clone https://github.com/jmattheis/gruvbox-dark-gtk ~/usr/share/themes/gruvbox-theme
