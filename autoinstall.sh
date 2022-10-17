@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sudo echo ""
 echo "========================================================================="
 echo "setting the folders in the directory .config"
