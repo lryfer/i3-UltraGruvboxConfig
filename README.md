@@ -17,6 +17,21 @@ that is the i3 rice I made, feel free to use it or do whatever you want  (ɔ◔�
 | Shell                                    | Fish                                     |
 | Omf theme                                | BobTheFish                               |\
 
+## Make commande:
+```
+make install
+
+make install-en-stock-shortcut
+make install-en-nostock-shortcut
+make install-fr-stock-shortcut
+make install-fr-nostock-shortcut
+
+make set-en
+make set-fr
+
+make set-stock-shortcut
+make set-nostock-shortcut
+```
 
 ![config-material](https://user-images.githubusercontent.com/96692294/191228900-2c4450e5-d3a8-4619-ab67-e7bfd77cc053.png)
 ![gruv-cup](https://user-images.githubusercontent.com/96692294/191228907-6a10be08-aa37-4eef-a1ff-26554f3adbc4.png)
