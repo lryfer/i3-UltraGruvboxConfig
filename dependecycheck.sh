@@ -40,6 +40,9 @@ fi
 if [[ -z $(command -v xdotool) ]]; then
   misdep+=" xdotool"
 fi
+if [[ -z $(command -v zip) ]]; then
+  misdep+=" zip"
+fi
 
 if [[ $misdep != "" ]]; then
   echo ${misdep:1}" is/are missing in the system"
