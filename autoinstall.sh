@@ -5,7 +5,7 @@ echo "========================================================================="
 echo "setting the folders in the directory .config"
 if [[ $(ls ~/.config/ | grep "OldConfig") ]]; then
   zip -r "archive-$(date +"%Y-%m-%d").zip" ~/.config/OldConfig/
-  rm -Rf ~/.config/OldConfig
+  rm -rf ~/.config/OldConfig
 fi
 mkdir ~/.config/OldConfig
 if [[ $(ls ~/.config/ | grep "alacritty") ]]; then
