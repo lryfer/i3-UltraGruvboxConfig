@@ -46,6 +46,7 @@ sudo chown -R ${USER}:${USER} ~/.config/polybar/scripts/
 sudo chmod -R 750 ~/.config/polybar/scripts/
 echo "========================================================================="
 echo "getting the gtk Theme"
+wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR="$HOME/.icons" sh
 rm -rf ~/.themes/gruvbox-dark-gtk
 git clone https://github.com/jmattheis/gruvbox-dark-gtk ~/.themes/gruvbox-dark-gtk
 GTK_THEME="gtk-theme-name=\"gruvbox-dark-gtk\"\ngtk-font-name=\"Sans Regular\"\ngtk-icon-theme-name=\"Papirus-Dark\"\n"
