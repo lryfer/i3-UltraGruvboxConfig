@@ -31,9 +31,6 @@ fi
 if [[ -z $(command -v i3lock) ]]; then
   misdep+=" i3lock"
 fi
-if [[ -z $(command -v papirus-icon-theme) ]]; then
-  misdep+=" papirus-icon-theme"
-fi
 if [[ -z $(command -v pavucontrol) ]]; then
   misdep+=" pavucontrol"
 fi
