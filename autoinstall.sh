@@ -4,8 +4,8 @@ sudo echo ""
 echo "========================================================================="
 echo "setting the folders in the directory .config"
 if [[ $(ls ~/.config/ | grep "OldConfig") ]]; then
-  echo -e "it seems the scripts already run on the system, you might \nneed to remove the folder ~/.config/OldConfig folder to execute the script"
-  exit 
+  zip -r "archive-$(date +"%Y-%m-%d").zip" ~/.config/OldConfig/
+  rm -Rf ~/.config/OldConfig
 fi
 mkdir ~/.config/OldConfig
 if [[ $(ls ~/.config/ | grep "alacritty") ]]; then
