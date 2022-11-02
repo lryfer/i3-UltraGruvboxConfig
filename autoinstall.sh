@@ -44,6 +44,7 @@ fi
 cp -rf src/polybar ~/.config/
 sudo chown -R ${USER}:${USER} ~/.config/polybar/scripts/
 sudo chmod -R 750 ~/.config/polybar/scripts/
+
 echo "========================================================================="
 echo "getting the gtk Theme"
 wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR="$HOME/.icons" sh
@@ -65,6 +66,14 @@ mkdir -p JBNF
 mv *.ttf JBNF && rm -r JetBrainsMono.zip
 rm -rf /usr/share/fonts/JBNF
 sudo mv -f JBNF /usr/share/fonts/
+
+cd ${HOME}
+git clone https://github.com/Carbon-Bl4ck/Rofi-Beats
+cd Rofi-Beats
+chmod +x rofi-beats
+
+sudo cp src/rofipower /usr/bin/
+
 echo "JetBrainsMono Nerd Fonts installed in the directory /usr/share/fonts/JBNF"
 echo "========================================================================="
 echo "                                 done                                    "
